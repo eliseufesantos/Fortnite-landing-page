@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header{
+
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    color:white;
+    animation: name 7s ease-in-out infinite;
+ 
+}
+
+h1{
+    position: relative;
+    right: 3.5%;
+}
+
+
+@keyframes name {
+
+    0% {background-color:  rgb(2,0,36);}
+
+    50% {background-color: rgba(9,9,121,1) 35%}
+    
+    70% {background-color:rgb(7, 220, 248)}
+
+    100% {background-color:rgb(2,0,36)}
+    
+}
+
+.picture{
+    width: 90px;
+    float: left;
+}
+
+
+section{
+
+    background-size: cover;
+    overflow: hidden;
+    background-image: url('../images/background.png');
+    background-position: center;
+    height: calc(100vh - 66px);
+
+}
+
+.formContainer{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+    max-width: 280px;
+    float: right;
+    background-color: #000000d7;
+    padding: 20px;
+
+    position: relative;
+    top: 10%;
+    right: 2%;
+
+    border-radius: 20px;
+    border: solid 2px rgb(63, 7, 248);
+    box-shadow: 0 0 100px rgb(63, 7, 248) ;
+}
+
+
+.mb{
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+}
+
+input, select{
+    width:100%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    border: solid  rgb(63, 7, 248);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color:  rgb(63, 7, 248);;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url('../images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    background-color: rgba(11, 6, 51, 0.6);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.pic{
+    width: 90px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.description{
+    color:white;
+    text-align: center;
+}
+
+@media screen and (max-width: 860px){
+
+    .formContainer{
+        margin: auto;
+        float: none;
+        left: 2%;
+        padding: 10px;
+    }
+    
+    .picture{
+        float: none;
+        margin: 10px;
+        width: 150px;
+    }
+
+    h1{
+        position: static;
+    }
+    
+    .pic{
+        width: 70px;
+    }
+
+    footer{
+     padding: 10px;
+    }
+}
