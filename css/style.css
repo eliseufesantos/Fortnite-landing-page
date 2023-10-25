@@ -1,57 +1,69 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-header{
+header {
 
     text-align: center;
     padding: 15px;
     font-size: 15px;
-    color:white;
+    color: white;
     animation: name 7s ease-in-out infinite;
- 
+
 }
 
-h1{
+h1 {
+
     position: relative;
     right: 3.5%;
-}
 
+}
 
 @keyframes name {
 
-    0% {background-color:  rgb(2,0,36);}
+    0% {
+        background-color: rgb(2, 0, 36);
+    }
 
-    50% {background-color: rgba(9,9,121,1) 35%}
-    
-    70% {background-color:rgb(7, 220, 248)}
+    50% {
+        background-color: rgba(9, 9, 121, 1) 35%
+    }
 
-    100% {background-color:rgb(2,0,36)}
-    
+    70% {
+        background-color: rgb(7, 220, 248)
+    }
+
+    100% {
+        background-color: rgb(2, 0, 36)
+    }
+
 }
 
-.picture{
+.picture {
+
     width: 90px;
     float: left;
+
 }
 
 
-section{
+section {
 
     background-size: cover;
     overflow: hidden;
     background-image: url('../images/background.png');
     background-position: center;
-    height: calc(100vh - 66px);
+    height: 100vh;
+    background-attachment: fixed;
 
 }
 
-.formContainer{
+.formContainer {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -67,40 +79,42 @@ section{
 
     border-radius: 20px;
     border: solid 2px rgb(63, 7, 248);
-    box-shadow: 0 0 100px rgb(63, 7, 248) ;
+    box-shadow: 0 0 100px rgb(63, 7, 248);
 }
 
 
-.mb{
+.mb {
     margin-bottom: 15px;
 }
 
-h2{
+h2 {
     font-size: 25px;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
-input, select{
-    width:100%;
+input,
+select {
+    width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    
-    border: solid  rgb(63, 7, 248);
+
+    border: solid rgb(63, 7, 248);
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     color: white;
-    background-color:  rgb(63, 7, 248);;
+    background-color: rgb(63, 7, 248);
+    ;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
 }
 
-select{
+select {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -111,51 +125,77 @@ select{
 
 }
 
-footer{
-    position:fixed;
-    bottom:0;
+footer {
+    position: fixed;
+    bottom: 0;
     background-color: rgba(11, 6, 51, 0.6);
-    padding: 15px;
+    padding: 2%;
     text-align: center;
     width: 100%;
-    
+
 }
 
-.pic{
-    width: 90px;
+.rodape__container {
+    padding-right: 80px;
+}
+
+.pic {
+    width: 4vw;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.description{
-    color:white;
+.description {
+    color: white;
     text-align: center;
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 860px) {
 
-    .formContainer{
-        margin: auto;
+    section {
+        background-image: url(/./images/responsive-fortnite-background2.png);
+        background-size: 125% auto;
+        background-repeat: no-repeat;
+        background-attachment: unset;
+    }
+
+    .formContainer {
+        margin: 10em auto;
         float: none;
         left: 2%;
         padding: 10px;
     }
-    
-    .picture{
+
+    .picture {
         float: none;
         margin: 10px;
-        width: 150px;
+        width: 30vw;
     }
 
-    h1{
+    h1 {
         position: static;
     }
-    
-    .pic{
-        width: 70px;
+
+    .pic {
+        width: 20vw;
     }
 
-    footer{
-     padding: 10px;
+    footer {
+        position: relative;
+        background-color: rgb(49, 48, 48);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5%;
+    }
+
+    .rodape__container {
+        padding: 0 0 4% 0;
+    }
+
+    .description {
+        display: block;
+        width: 80vw;
     }
 }
