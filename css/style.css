@@ -160,12 +160,12 @@ footer {
         background-image: url(/./images/responsive-fortnite-background2.png);
         background-size: 127% auto;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: unset;
         padding-right: 4%;
     }
 
     .formContainer {
-        margin: 0 auto;
+        margin: 10em auto;
         float: none;
         left: 2%;
         padding: 15px;
