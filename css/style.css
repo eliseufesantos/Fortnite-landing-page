@@ -158,9 +158,9 @@ footer {
 
     section {
         background-image: url(/./images/responsive-fortnite-background2.png);
-        background-size: 122% auto;
+        background-size: 125% auto;
         background-repeat: no-repeat;
-        background-attachment: unset;
+        background-attachment: fixed;
         padding-right: 4%;
     }
 
