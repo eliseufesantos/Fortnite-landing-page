@@ -158,17 +158,17 @@ footer {
 
     section {
         background-image: url(/./images/responsive-fortnite-background2.png);
-        background-size: 125% auto;
+        background-size: 100% auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
         padding-right: 4%;
     }
 
     .formContainer {
-        margin: 10em auto;
+        margin: 0 auto;
         float: none;
         left: 2%;
-        padding: 10px;
+        padding: 15px;
     }
 
     .picture {
